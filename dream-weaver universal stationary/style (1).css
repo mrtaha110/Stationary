@@ -1,0 +1,260 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.banner{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/* .logo{
+    margin: auto 3rem;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+} */
+
+span{
+    color: rgb(174, 255, 0);
+}
+
+.nav-links{
+    margin: auto 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1.2rem;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(255, 221, 233);
+    transition: 0.6s ease-out;
+    
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:3% ;
+
+}
+
+.container form{
+    width: 680px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-top: 2%;
+   
+   
+}
+
+.container form input::placeholder{
+    color: rgb(126, 126, 126);
+    font-size: small;
+    font-weight: bold;
+}
+
+
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color: rgb(49, 48, 48);
+    font-weight: bolder;
+    width: 600px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(44, 0, 31);
+    color: #fff;
+    font-weight:bolder;
+
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+    
+}
+
+textarea::-webkit-scrollbar{
+    width: 2rem;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(46, 0, 27, 0.713);
+    
+}
+
+.container form #button{
+    border:rgb(255, 212, 241) solid 1px;
+    background: rgb(255, 212, 241);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container form #button:hover{
+    opacity: 0.7;
+    background-color: rgb(48, 0, 48);
+    color: white;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding-top: 2%;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+
+.wrap{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+   align-items: center;
+
+  
+}
+
+.card{
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    margin: 10px;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-repeat:no-repeat;
+    background-size: cover !important;
+}
+
+.contact{
+    height:20rem;
+    width:77rem;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(penmarker.png.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+    .contact h1{
+        
+    position:absolute ;
+            margin-top:100px;
+          left:24%;
+       font-family:
+       Lucida Handwriting;
+       font-weight: bolder;
+       font-size: 90px;
+        -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+  color: #fff;
+letter-spacing: 2px;
+	text-transform:capitalize;
+}
+
+
+

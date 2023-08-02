@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+
+
+.navbar-toggler{
+        background-color: white !important;
+        color: white !important;
+      }
+      @media(max-width: 600px) {
+  .card{
+       margin-left: 25%;
+  }
+  .navbar-toggler{
+    width: 70px;
+  }
+}
+/* navbar */
+
+.search img
+{
+  position: absolute;
+  height: 75px;
+  /* margin-top: 10px; */
+  top: 14px;
+  
+
+
+}
+.navbar{
+  background-color:#270522  !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+/* search */
+.form-control{
+
+padding-left: 100px ;
+
+}
+.div1{
+ background-color:rgb(255, 249, 249);
+
+}
+
+.d-flex{
+  width: 400px;
+  /* padding-bottom: 22px; */
+/* padding-top: 10px; */
+
+
+
+
+
+}
+
+.d-flex ::placeholder{
+font-size: 12px;
+  font-weight:600;
+left:20px;
+  position: absolute;
+  /* top:10px */
+}
+
+.btn ::placeholder{
+    font-size: 1px;
+
+}
+.bt{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    background-color: #ffd6ee;
+    border: transparent;
+    border-radius: 5px;
+    
+
+}
+.dropdown-item{
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 234, 246);
+  border: none;
+  font-style: italic;
+
+  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1.2rem;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(255, 221, 233);
+    transition: 0.6s ease-out;
+    
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+/* navbar end */
+/* breadcrumbs */
+.breadcrumb a{
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 10px;
+ font-weight: 600;
+ text-decoration: none;
+}
+.breadcrumb li{
+  font-size: 14px;
+  color: lightgrey;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-top: 10px;
+padding-right: 10px;
+font-weight: bold;
+}
+
+/* faq css */
+
+.faqhead{
+ 
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(https://nfptr.org/build/assets/nfptr/_hero/faqs.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 3%;
+
+}
+h1{
+ margin-top:100px;
+ left:24%;
+       font-family:
+       Lucida Handwriting;
+       font-weight: bolder;
+       font-size: 70px;
+        -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+  color: #fff;
+letter-spacing: 2px;
+	text-transform:lowercase;
+  text-align: center;
+}
+.brown{
+  height: 200px;
+  width: 30%;
+  margin-top: 70px;
+position: absolute;
+right:70px;
+
+}
+.red{
+  height: 200px;
+  width: 30%;
+  margin-top: 390px;
+position: absolute;
+left:60px;
+
+}
+.pink{
+  height: 200px;
+  width: 95%;
+
+position: absolute;
+left:200%;
+margin-top: -200px;
+}
+.yellow{
+  position: absolute;
+margin-top: 20%;
+}
+.black{
+  position: absolute;
+  margin-left: -200%;
+ top:-90%;
+  width: 95%;
+}
+/* ////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.container {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 40%;
+  margin-top: 45px;
+}
+.container:hover .box {
+  transform: rotateY(25deg);
+}
+.container .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,rgb(172, 69, 120),#000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container .box:hover .imgBx:before {
+  opacity: 1;
+}
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.container .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.container .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container .box:hover .content p {
+  transform: translateY(0px);
+}
+/* 
+///////////// */
+@media(max-width:600px){
+  .form-control{
+height:50%;
+width: 40%;
+
+  }
+  .form-control::placeholder{
+    font-size: 100px;
+    
+  }
+  .main{
+   
+bottom: 20%;
+  }
+  .search img{
+    height:60px
+  }
+  .bt{
+    height:96%;
+width: 96%;
+  }
+ 
+  .faqhead h1{
+    font-size: 90%;
+    font-weight:300;
+    margin-bottom: 80px;
+
+  }
+  #box1{
+    margin-right: 70%;
+    }
+    .red .accordion{
+    margin-left:-5%;
+    height: 90%;
+    width: 80%;
+   
+     
+    }
+    .brown .accordion{
+      margin-top:430%;
+      margin-left:-44rem;
+      height: 90%;
+    width: 80%;
+      
+    }
+    #box3{
+      margin-right: -90%;
+    }
+    .black{
+      margin-top: -190%;
+      width:100% ;
+      margin-left: -206%;
+    }
+    .pink{
+      margin-top: 20%;
+      width:100% ;
+      margin-left: -201%;
+    }
+    #box2{
+    margin-left: -202%;
+    margin-top: -150%;
+    }
+    
+
+    #box4{
+
+    margin-left: -218%;
+    margin-top: 180%;
+  
+    }
+    .yellow{
+  
+      margin-left: -210%;
+    margin-top: 210%;
+    width:108% ;
+    }
+}
+/* ////////// */
+
+@media(min-width:600px){
+ #box1{
+height: 240px;
+padding-right: 240px;
+  margin-right: 60%;
+ }
+ .brown{
+  height:12px;
+  width:250px;
+  margin-right: -70px;
+ }
+ .red{
+  margin-top: 70px;
+  height:12px;
+  width:250px;
+  margin-left: -70px;
+  
+ }
+ #box2{
+  height: 200px;
+  margin-left: -30px;
+  margin-top: 20px;
+ }
+ #box3{
+  height: 250px;
+  width: 30px;
+  padding-right: 230px;
+ }
+ .pink{
+  height:40px;
+  width:250px;
+  margin-left: -220px;
+}
+#box4{
+  height: 250px;
+  width: 30px;
+  padding-right: 260px;
+}
+.black{
+  height:40px;
+  width:250px;
+  margin-left: -276px;
+  margin-top: 10px;
+}
+}
+/* ////////// */
+@media(min-width:992px){
+  .search img
+{
+  position: absolute;
+  height: 75px;
+  /* margin-top: 10px; */
+  top: 1px;
+  
+
+
+}
+  .brown{
+width:400px;
+margin-right: 20px;
+  }
+  #box1{
+    height: 300px;
+    width:360px;
+    padding-right: 200px;
+
+ 
+    padding-right: 200px;
+  }
+  .red{
+    margin-top: 400px;
+    width:400px;
+margin-right: 20px;
+  }
+  #box2{
+    height: 300px;
+    width:360px;
+    padding-right: 200px;
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+  .black{
+
+    width:400px;
+margin-left:560px;
+position: absolute;
+top: -510px;
+  }
+  #box3{
+
+    height: 300px;
+    width:360px;
+    padding-right: 200px;
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+  .pink{
+ margin-top: 60px;
+    width:400px;
+margin-left: -800px;
+
+  }
+  #box4{
+    height: 300px;
+    width:360px;
+    padding-right: 200px;
+    right: -600px;
+    margin-top: 1px;
+  }
+  .yellow{
+ top:150px;
+ height: 300px;
+    width:360px;
+  }
+}
+
+
+.icons a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+
+
+}
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+
+
+
+}
+.icons ion-icon:hover{
+
+    color: rgb(176, 33, 100);
+}
+/* 
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+} */
+
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+  position: absolute;
+  top: 200%;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 5px 5px;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  white-space: nowrap;
+  
+ 
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 600
+}
+ul li a:hover {
+  color: hsl(313, 100%, 95%);
+  transition: 0.6s ease-out;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+  text-decoration: overline;
+ 
+}
+input,
+button {
+  font-size: 12px;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ font-weight: 600;
+}
+button {
+  background-color: #e68bc0;
+  color: #ffffff;
+}
+button:hover{
+  background-color: #2e002a;
+  transition: 0.6s ease-out;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #790c70;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+.faqhead h1{
+font-size: 30px;
+
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+
+</head>
+<body>
+  <div class="container-fluid"><div class="row"><div class="col">
+    <form class="d-flex" >
+      <input class="form-control me-2" type="search" placeholder="what are you looking for?" aria-label="Search" style="margin-left: 20%">
+     <div class="row"><div class="col-sm-12" >
+      <button class="bt" style=" color: black;
+     font-weight: 650;padding: 9px ;padding-right: 19px;padding-left: 19px;">Search</button>
+     </div></div>
+     
+    </form>
+  </div>
+
+  <div class="div1">
+      <div class="search">
+        <img src="logo1.png">
+      </div>
+
+     <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;">DUS</a>        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+              <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="compare.html" style="color: white;">comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sale.html" style="color: white;">SALE</a>
+                </li>
+                
+               
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                    CATEGORIES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Art.html">Art supplies</a></li>
+                    <li><a class="dropdown-item" href="office.html">Office supplies</a></li>
+                    <li><a class="dropdown-item" href="scholhome.html">School supplies</a></li>
+                    <li><a class="dropdown-item" href="toys.html">Toys and games</a></li>
+                  </ul>
+                </li>
+              </ul>
+           
+            </div>
+          </div>
+        </nav>
+       </div>
+     </div>
+  </div></div>
+  <div class="row"><div class="col">
+    
+    <!-- breadcrumb -->
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="FAQS.html">FAQS</a></li>
+  
+  </ol>
+</nav>
+<!-- breadcrumb -->
+  </div></div>
+
+  <div class="faqhead"><div class="row"><div class="col">
+
+    <h1>FREQUENTILY ASKED QUESTIONS </h1></div>
+</div></div>
+<div class="main" style="   background-color: #ffd5f9;
+background-image: linear-gradient(43deg, #ffffff 0%, rgb(243, 134, 185)rgb(255, 255, 255)30051c 100%);padding-bottom: 200%;">
+
+<!-- 
+/////////// -->
+
+<div class="container">
+  <div class="box" id="box1">
+    <div class="imgBx">
+      <img src="https://cdn.dribbble.com/users/5349290/screenshots/14541455/media/42fe476216de6fcbc6eab5ce5b4c91a8.png?compress=1&resize=400x300&vertical=top" style="opacity: 40%">
+    </div>
+    <div class="content">
+
+        <div>
+          <h2>why our brand?</h2>
+          <p>Our brand represents our  promise to our customer.Helps you create clarity and stay focused and helps you connect with customers emotionally. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="brown"><div class="col">
+   
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item" style="background-color:transparent ;border: transparent" >
+          <h2 class="accordion-header" id="headingOne" >
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(255, 245, 255);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 690;color: #270522;text-transform: capitalize;margin-bottom: 12px;" >
+              How to order?  
+              </button>
+              
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+              <div class="accordion-body" style="text-align:center;font-size: smaller;font-weight: 100;padding: 30px
+              ;background-color:#270522;color: #fff;">
+               
+                <strong>Visit our website thestationerycomapny.pk, add to cart all the products you want to purchase, click on proceed to checkout, then fill in your details and proceed to complete. You can pay via Cash on Delivery (COD) or through banking channels
+              </div>
+            </div>
+          </div>
+  
+    </div></div>
+
+
+
+    <div class="box" id="box2">
+      <div class="imgBx">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DKDB1V-XGKPmrWS-yPumReFCYIG1HCbgwPfVnd1ij8a3Wf_3jPGWE185sxo6h0uFQvg&usqp=CAU" style="opacity: 40%">
+      </div>
+      <div class="content">
+  
+          <div>
+            <h2>DUS offers quality products</h2>
+            <p>Our office supplies will help you organize your workspace from all kinds of desk essentials to top quality staplers, calculators and organizers
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+      <div class="red"><div class="col">
+        
+     
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" style="background-color:transparent ;border: transparent" >
+            <h2 class="accordion-header" id="headingOne" >
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(255, 245, 255);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 690;color: #270522;text-transform:capitalize;margin-bottom: 12px;" >
+                Is their any free Delivery?
+                </button>
+                
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                <div class="accordion-body" style="text-align:center;font-size: smaller;font-weight: 100;padding: 30px
+                ;background-color:#270522;color: #fff;">
+                 
+                  <strong>Yes! FREE DELVIERY on all orders Rs.3000/- and Above.
+
+                    *(FREE delivery is covered upto 4KG Only - For every additional Kg Rs.200 will be charged
+              </div>
+            </div>
+    
+      </div>
+  
+      <!-- ///////////////// -->
+      <div class="box" id="box3">
+        <div class="imgBx">
+          <img src="https://cdn.dribbble.com/users/5349290/screenshots/15926959/media/1658d8c3e3fef3d004c6fa5f3de694cd.png?compress=1&resize=400x300&vertical=top" style="opacity: 40%">
+        </div>
+        <div class="content">
+    
+            <div>
+              <h2>Costomer experience</h2>
+              <p>We provide a shopping experience that inspires our customers to pursue their creative goals
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+        <div class="pink"><div class="col">
+       
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="background-color:transparent ;border: transparent" >
+              <h2 class="accordion-header" id="headingOne" >
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(255, 245, 255);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 690;color: #270522;text-transform: capitalize;margin-bottom: 12px;" >
+                  What are your delivery charges?
+                  </button>
+                  
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                  <div class="accordion-body" style="text-align:center;font-size: smaller;font-weight: 100;padding: 30px
+                  ;background-color:#270522;color: #fff;">
+                   
+                    <strong> We Deliver Nationwide in just Rs.199/- for the whole Order. 
+
+                      FREE Delivery for All Order Rs.3000/- and Above.
+                </div>
+              </div>
+      
+        </div>
+    </div>
+<!-- ///////////// -->
+
+
+<div class="box" id="box4">
+  <div class="imgBx">
+    <img src="https://cdn.dribbble.com/userupload/2715697/file/still-fb4db731d10be8f49e131ede636a1c24.gif?compress=1&resize=320x240&vertical=top" style="opacity: 40%">
+  </div>
+  
+  <div class="content">
+
+      <div>
+        <h2>Our mission</h2>
+        <p>Our mission is to bring convenience to our customers’ lives by bringing all their desired products just a click away
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="yellow"><div class="col">
+ 
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" style="background-color:transparent ;border: transparent" >
+        <h2 class="accordion-header" id="headingOne" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(255, 245, 255);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 690;color: #270522;text-transform: capitalize;margin-bottom: 12px;" >
+            What if I received a damaged product?
+            </button>
+            
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+            <div class="accordion-body" style="text-align:center;font-size: smaller;font-weight: 100;padding: 30px
+            ;background-color:#270522;color: #fff;">
+             
+              <strong>We adhere to the best possible packing methods. But in case your package is obviously tampered with or there has been severe transit damage, reach out to us immediately and we will address the same.
+          </div>
+        </div>
+
+  </div>
+  
+  <div class="black"><div class="col">
+ 
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" style="background-color:transparent ;border: transparent" >
+        <h2 class="accordion-header" id="headingOne" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:rgb(255, 245, 255);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 690;color: #270522;text-transform: capitalize;margin-bottom: 12px;" >
+ In how many days my order will reach me?
+            </button>
+            
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+            <div class="accordion-body" style="text-align:center;font-size: smaller;font-weight: 100;padding: 30px
+            ;background-color:#270522;color: #fff;">
+             
+              <strong>We use Premium Express Track able Service for all our shipments for Fastest Delivery.
+
+                For Lahore Delivery time is 1-3 Working Days. 
+                
+                For Karachi, Islamabad, Rawalpindi, Faisalabad, Multan, Gujranwala, Peshawar Delivery time is 2-4 Working Days.
+                
+                For Rest of the Cities Delivery time is 2-6 Working Days. 
+                
+                
+                Due to COVID-19 deliveries might be delayed in certain areas of Pakistan (depending upon Government Policies refering Lockdown
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+
+
+</div>
+
+</body>
+</html>

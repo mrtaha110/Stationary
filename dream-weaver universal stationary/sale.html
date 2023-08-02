@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+    
+   .row{
+    padding-top: 10px;
+   }
+    .card-body h5{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      }
+      .card-body p{
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  
+}
+      .card{
+        margin-left: 20px;
+        
+      }
+      #ab{
+        transition: transform .2s;
+        padding-top: 30px;
+      }
+      
+      #ab:hover {
+        -ms-transform: scale(1.1); 
+        -webkit-transform: scale(1.1); 
+        transform: scale(1.1); 
+      }
+ 
+
+.navbar-toggler{
+  background-color: white!important;
+  color: white !important;
+
+}
+
+@media(max-width: 600px) {
+  .card{
+       margin-left: 25%;
+  }
+  .navbar-toggler{
+    width: 70px;
+  }
+}
+
+.search img
+{
+  position: absolute;
+  height: 75px;
+  /* margin-top: 10px; */
+  top: 14px;
+  
+
+
+}
+.navbar{
+  background-color:#270522  !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+ 
+ 
+}
+/* search */
+.form-control{
+
+padding-left: 100px ;
+
+}
+.div1{
+ background-color:rgb(255, 249, 249);
+}
+
+.d-flex{
+  width: 350px;
+  /* padding-bottom: 22px; */
+padding-top: 5px;
+
+
+
+
+
+}
+
+.d-flex ::placeholder{
+font-size: 12px;
+  font-weight:600;
+left:20px;
+  position: absolute;
+  /* top:10px */
+}
+
+.btn ::placeholder{
+    font-size: 1px;
+
+}
+.bt{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    background-color: #ffd6ee;
+    border: transparent;
+    border-radius: 5px;
+    
+
+}
+
+.dropdown-item{
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 234, 246);
+  border: none;
+  font-style: italic;
+
+  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1.2rem;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(255, 221, 233);
+    transition: 0.6s ease-out;
+    
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.card-body a{
+  
+  margin-left: 67px ;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color:rgb(251, 207, 226);
+  color: black;
+  border-radius: 10px;
+  border: transparent ;
+  right: 200px;
+  left: 200px;
+ }
+
+ .card-body a:hover
+{
+  background-color:rgb(138, 8, 73);
+}
+
+#for{
+  height: 62%;
+}
+
+#wom{
+  height: 60%;
+}
+
+
+
+.icons a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+
+
+}
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+
+
+
+}
+.icons ion-icon:hover{
+
+    color: rgb(176, 33, 100);
+}
+/* 
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+} */
+
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+
+font-weight: bold;
+
+}
+.row {
+  padding: 5px 5px;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  white-space: nowrap;
+  
+ 
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 600
+}
+ul li a:hover {
+  color: hsl(313, 100%, 95%);
+  transition: 0.6s ease-out;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+  text-decoration: overline;
+ 
+}
+input,
+button {
+  font-size: 12px;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ font-weight: 600;
+}
+button {
+  background-color: #e68bc0;
+  color: #ffffff;
+}
+button:hover{
+  background-color: #2e002a;
+  transition: 0.6s ease-out;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #790c70;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+    
+.breadcrumb a{
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 10px;
+ font-weight: 600;
+ text-decoration: none;
+}
+.breadcrumb li{
+  font-size: 14px;
+  color: lightgrey;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 10px;
+padding-right: 10px;
+font-weight: bold;
+}
+     </style> 
+</head>
+<body>
+  <div class="container-fluid"><div class="row"><div class="col"></div>
+  <form class="d-flex" >
+      <input class="form-control me-2" type="search" placeholder="what are you looking for?" aria-label="Search" style="height: 40px; margin-top: 10px;">
+     <div class="row"><div class="col-sm-12" >
+      <button class="bt" style=" color:white; margin-top: 6px;
+     font-weight: 650;padding: 9px ;padding-right: 19px;padding-left: 19px;">Search</button>
+     </div></div>
+     
+    </form>
+  </div>
+
+  <div class="div1">
+      <div class="search">
+        <img src="logo1.png">
+      </div>
+
+ 
+   <div class="row">
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" style="color: white;">DUS</a>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+            <span class="navbar-toggler-icon" style="color: white;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compare.html" style="color: white;">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sale.html" style="color: white;">SALE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  CATEGORIES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Art.html">Art supplies</a></li>
+                  <li><a class="dropdown-item" href="office.html">Office supplies</a></li>
+                  <li><a class="dropdown-item" href="scholhome.html">School supplies</a></li>
+                  <li><a class="dropdown-item" href="toys.html">Toys and games</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+     </div>
+   </div>
+  
+   <div class="row"><div class="col">
+    
+    <!-- breadcrumb -->
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="scholhome.html">school Supplies</a></li>
+  
+  </ol>
+</nav>
+<!-- breadcrumb -->
+  </div></div>
+
+
+   <div class="row">
+     <div class="col" id="ab" >
+      <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -32%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+        <img src="beg1.jpg" class="card-img-top w-100 h-50" alt="...">
+        <div class="card-body">
+            <p>Fashion Bags </p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:1100 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:800 </span> </b>
+          </span>
+          <a href="not33.html" class="btn btn-primary">Buy it now</a>
+
+        </div>
+      </div>
+    </div>
+     <div class="col" id="ab">
+      <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -20%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+        <img src="image3.webp" class="card-img-top w-100 h-75" alt="...">
+        <div class="card-body">    
+          <p>TSC Spiral Notebook Style 180 </p>                                  
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:750 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:550 </span> </b>     
+          </span>
+          <a href="not34.html" class="btn btn-primary">Buy it now</a>
+
+         
+        </div>
+      </div>
+     </div>
+     <div class="col"  id="ab">
+      <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -25%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+        <img src="image20.jpeg" class="card-img-top w-100 h-75" alt="...">
+        <div class="card-body">
+          <p>Nut Winding Bead Toy Series</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:1500 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:1200 </span> </b>
+          </span>
+          <a href="not35.html" class="btn btn-primary">Buy it now</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col"  id="ab">
+      <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%;  position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -12%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+        <img src="paint.png" class="card-img-top w-100 h-100" alt="...">
+        <div class="card-body">
+          <p>Maries  Paint Tubes 75ml</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:800 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:700 </span> </b>
+          </span>
+          <a href="not36.html" class="btn btn-primary">Buy it now</a>
+
+         
+       
+        </div>
+      </div>
+    </div>
+     </div>
+   
+ 
+ 
+  <div class="row">
+    <div class="col"  id="ab">
+     <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+      <div class="product-label" data-label-new-number="5" style="padding-left: 81% ; position: absolute;"> 
+        <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -10%</strong><br>
+        <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                </div>
+       <img src="dlie2.jpg" class="card-img-top w-100 h-100" alt="...">
+       <div class="card-body">
+        <p>Deli Highlighter Chisel Tip S621</p>
+        <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+          <span class="money">RS:1000 </span>
+        </span>
+    
+        <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+         <b> <span class="money">RS:700 </span> </b>
+        </span>
+        <a href="not37.html" class="btn btn-primary">Buy it now</a>
+
+         
+       </div>
+     </div>
+   </div>
+    <div class="col"  id="ab">
+     <div class="card shadow" style="width: 14rem; height: 22rem;">
+
+      <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+        <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -15%</strong><br>
+        <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                </div>
+       <img src="image25.jpeg" class="card-img-top w-100 h-75" alt="...">
+       <div class="card-body">
+        <p>Educatinal Block Toy </p>
+        <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+          <span class="money">RS:1300 </span>
+        </span>
+    
+        <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+         <b> <span class="money">RS:750 </span> </b>
+        </span>
+        <a href="not38.html" class="btn btn-primary">Buy it now</a>
+
+       </div>
+     </div>
+    </div>
+    <div class="col"  id="ab">
+     <div class="card shadow" style="width: 14rem; height: 22rem;">
+      <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+        <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -5%</strong><br>
+        <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                </div>
+       <img src="1.jpg" class="card-img-top w-100 h-75" alt="...">
+       <div class="card-body">
+        <p>Sakura Pigma Pen Set </p>
+        <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+          <span class="money">RS:500 </span>
+        </span>
+    
+        <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+         <b> <span class="money">RS:300 </span> </b>
+        </span>
+        <a href="not39.html" class="btn btn-primary">Buy it now</a>
+
+       </div>
+     </div>
+   </div>
+   <div class="col"  id="ab">
+    <div class="card shadow" style="width: 14rem; height: 22rem;">
+      <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+        <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -22%</strong><br>
+        <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                </div>
+      <img src="image11.webp" class="card-img-top w-100 h-75" alt="...">
+      <div class="card-body">
+        <p>Blocks SuperWit  </p>
+        <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+          <span class="money">RS:1200 </span>
+        </span>
+    
+        <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+         <b> <span class="money">RS:800 </span> </b>
+        </span>
+        <a href="not40.html" class="btn btn-primary">Buy it now</a>
+
+      </div>
+    </div>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col"  id="ab">
+       
+       <div class="card shadow" style="width: 14rem; height: 22rem;">
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -27%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+         <img src="mark3.jpg" class="card-img-top w-100 h-75" alt="...">
+         <div class="card-body">
+          <p>M&G Watercolor Marker</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:1320 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:900 </span> </b>
+          </span>
+          <a href="not41.html" class="btn btn-primary">Buy it now</a>
+
+           
+         </div>
+       </div>
+     </div>
+      <div class="col"  id="ab">
+       <div class="card shadow" style="width: 14rem; height: 22rem;">
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -30%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+         <img src="beg5.jpg" class="card-img-top w-100 h-75" alt="...">
+         <div class="card-body">
+          <p>Dream Glitter Bags For Girls</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:1000 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:700 </span> </b>
+          </span>
+          <a href="not42.html" class="btn btn-primary">Buy it now</a>
+
+         </div>
+       </div>
+      </div>
+      <div class="col"  id="ab">
+       <div class="card shadow" style="width: 14rem; height: 22rem;">
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -20%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+         <img src="image9.webp" class="card-img-top w-100 h-75" alt="...">
+         <div class="card-body">
+          <p>TSC Spiral Notebook Style</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:750 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:550 </span> </b>
+          </span>
+          <a href="not43.html" class="btn btn-primary">Buy it now</a>
+
+         </div>
+       </div>
+     </div>
+     <div class="col"  id="ab">
+      <div class="card shadow" style="width: 14rem; height: 22rem;">
+        <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+          <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -10%</strong><br>
+          <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                  </div>
+        <img src="pexels-photo-1226402.jpeg" class="card-img-top w-100 h-75" alt="...">
+        <div class="card-body">
+          <p> Aquarelle Color Pencil</p>
+          <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+            <span class="money">RS:1000 </span>
+          </span>
+      
+          <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+           <b> <span class="money">RS:700 </span> </b>
+          </span>
+          <a href="not44.html" class="btn btn-primary">Buy it now</a>
+
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <div class="row">
+        <div class="col"  id="ab">
+         <div class="card shadow" style="width: 14rem; height: 22rem;">
+          <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+            <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -30%</strong><br>
+            <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                    </div>
+           <img src="brush.png" class="card-img-top w-100 " id="wom" alt="...">
+           <div class="card-body">
+            <p>Daler Rowney Aquafine Paint Brushes</p>
+            <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+              <span class="money">RS: 925</span>
+            </span>
+        
+            <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+             <b> <span class="money">RS:720 </span> </b>
+            </span>
+            <a href="not45.html" class="btn btn-primary">Buy it now</a>
+
+             
+           </div>
+         </div>
+       </div>
+        <div class="col"  id="ab">
+         <div class="card shadow" style="width: 14rem; height: 22rem;">
+          <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+            <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -22%</strong><br>
+            <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                    </div>
+           <img src="paints.png" class="card-img-top w-100 " id="wom" alt="...">
+           <div class="card-body">
+            <p>Sakura Poster Paint Color 30  </p>
+            <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+              <span class="money">RS:400 </span>
+            </span>
+        
+            <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+             <b> <span class="money">RS:250 </span> </b>
+            </span>
+            <a href="not46.html" class="btn btn-primary">Buy it now</a>
+
+           </div>
+         </div>
+        </div>
+        <div class="col"  id="ab">
+         <div class="card shadow" style="width: 14rem; height:22rem;">
+          <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+            <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -16%</strong><br>
+            <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                    </div>
+           <img src="parmenantmarker.png" class="card-img-top w-100 " id="wom" alt="...">
+           <div class="card-body">
+            <p>Sakura Pen Touch Calligraphy Marker 1.8mm</p>
+            <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+              <span class="money">RS:890 </span>
+            </span>
+        
+            <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+             <b> <span class="money">RS:790 </span> </b>
+            </span>
+            <a href="not47.html" class="btn btn-primary">Buy it now</a>
+
+           </div>
+         </div>
+       </div>
+       <div class="col"  id="ab">
+        <div class="card shadow" style="width: 14rem; height: 22rem;">
+          <div class="product-label" data-label-new-number="5" style="padding-left: 81%; position: absolute;"> 
+            <strong class="label sale-label" style="background-color: rgb(236, 85, 85); color: white;"> -25%</strong><br>
+            <strong class="label new-label" style=" color: rgb(145, 143, 143); font-size: medium; font-weight: 400;" > New</strong><br>
+                    </div>
+          <img src="pencilwhit.jpg" class="card-img-top w-100 " id="for" alt="...">
+          <div class="card-body">
+            <p>pencil set </p>
+            <span class="old-price" style="text-decoration: line-through;  padding-left: 20px; font-size: small; color: rgb(73, 72, 72);">
+              <span class="money">RS:450 </span>
+            </span>
+        
+            <span class="SPECIAL-price" style="color: red; padding-left: 20px; font-size: small;">
+             <b> <span class="money">RS:240 </span> </b>
+            </span>
+            <a href="not48.html" class="btn btn-primary">Buy it now</a>
+
+          </div>
+        </div>
+      </div>
+        </div>
+</div><br><br>
+
+
+<footer>
+  <div class="row primary">
+    <div class="column about">
+  
+    <h3>COMPANY</h3>
+  
+     <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 13px;
+     font-weight: 600;">
+        DUS-Dream-WeaverUniversal Stationery
+    </p>
+  
+    <div class="social">
+      <i class="fa-brands fa-facebook-square"></i>
+      <i class="fa-brands fa-instagram-square"></i>
+      <i class="fa-brands fa-twitter-square"></i>
+      <i class="fa-brands fa-youtube-square"></i>
+      <i class="fa-brands fa-whatsapp-square"></i>
+    </div>
+  </div>
+  
+  <div class="column links">
+  <h3>INFORMATION</h3>
+  
+   <ul>
+  
+    <li>
+     <a href="#faq">F.A.Q</a>
+    </li>
+    <li>
+     <a href="#cookies-policy">Our journey</a>
+    </li>
+    <li>
+     <a href="aboutus.html">About us</a>
+    </li>
+    <li>
+     <a href="Contact Us (1).html">Contact us</a>
+    </li>
+   </ul>
+  
+  </div>
+  
+  
+  <div class="column links">
+    <h3>STAY CONNECTED</h3>
+     <ul>
+      <li>
+        <div class="icons" >
+  
+          <a href="https://www.facebook.com/mohammadtaha.siddiqui.35" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a>
+          
+        
+          <a href="https://www.instagram.com/accounts/edit/" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
+          
+          <a href="https://www.skype.com/" target="_blank"><ion-icon name="logo-skype" ></ion-icon></a>
+           
+          <a href="https://twitter.com/login" target="_blank"><ion-icon name="logo-twitter" ></ion-icon></a>
+            
+          <a href="https://www.google.com.pk/webhp" target="_blank"><ion-icon name="logo-google" ></ion-icon></a>
+          
+          
+  
+         </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="column subscribe">
+   <h3>Sign up for our Newsletter</h3>
+    <div>
+     <input type="email" placeholder="Your email id here" />
+     <button>Subscribe</button>
+    </div>
+  
+  </div>
+      
+  <p style="text-align:left ;padding-top:20%;font-size: 10px;margin-left: 10%">
+    Address: 42 Chamberlain Road, Anarkali Bazar, Lahore, Punjab, Pakistan 54000<br><br>
+    Email: thestationerycompanypk@gmail.com<br><br>
+    Phone: 03-111-622-622<br><br>
+    Opening Hours: Monday to Saturday: 10am - 7pm
+        </p>
+  
+     
+</div>
+<div class="text-center p-3" style="font-size: smaller;border-top:#25262e 10px solid;background-color: #121315;padding:10px ;;">
+  © 2022 Dream Weaver Universal Stationary
+  <a class="text-grey" href="https://Universal.com/" style="text-decoration: none;color:#790c70;font-weight:600;   transition: 0.3s ease;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Universal Stationary.com</a>
+  </div>
+</div>
+</footer>
+  
+  </div>
+
+  </footer>
+</body>
+</html>

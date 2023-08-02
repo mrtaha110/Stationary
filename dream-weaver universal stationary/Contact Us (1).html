@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Contact us</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    
+    
+      <style>
+               /* navbar */
+.navbar-toggler{
+  background-color: white!important;
+  color: white !important;
+
+}
+
+@media(max-width: 600px) {
+  .card{
+       margin-left: 25%;
+  }
+  .navbar-toggler{
+    width: 90px;
+  }
+}
+
+.search img
+{
+  position: absolute;
+  height: 75px;
+  /* margin-top: 10px; */
+  top: 14px;
+  
+
+
+}
+.navbar{
+  background-color:#270522  !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+ 
+ 
+}
+/* search */
+.form-control{
+
+padding-left: 100px ;
+
+}
+.div1{
+ background-color:rgb(255, 249, 249);
+}
+
+.d-flex{
+  width: 350px;
+  /* padding-bottom: 22px; */
+padding-top: 5px;
+
+
+
+
+
+}
+
+.d-flex ::placeholder{
+font-size: 12px;
+  font-weight:600;
+left:20px;
+  position: absolute;
+  /* top:10px */
+}
+
+.btn ::placeholder{
+    font-size: 1px;
+
+}
+.bt{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    background-color: #ffd6ee;
+    border: transparent;
+    border-radius: 5px;
+    
+
+}
+
+.dropdown-item{
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 234, 246);
+  border: none;
+  font-style: italic;
+
+  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1.2rem;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(255, 221, 233);
+    transition: 0.6s ease-out;
+    
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+/* navbar end */
+/* breadcrumbs */
+.breadcrumb a{
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 10px;
+ font-weight: 600;
+ text-decoration: none;
+}
+.breadcrumb li{
+  font-size: 14px;
+  color: lightgrey;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-top: 10px;
+padding-right: 10px;
+font-weight: bold;
+}
+@media(max-width:600px){
+  
+  .navbar-toggler{
+    width: 90px;
+  }
+  .main{
+   
+bottom: 20%;
+  }
+  .search img{
+    height:60px
+  }
+  .bt{
+    height:96%;
+width: 96%;
+  }
+  .navbar-toggler-icon{
+   color: #fff;
+  }
+}
+.div2{
+  
+    background-color: rgb(226, 196, 255);
+  }
+  
+ .accordion {
+  padding-left: 100PX;
+  padding-right: 100PX;
+  padding: 1px;
+  font-size: smaller;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: 500;
+ text-transform: capitalize;
+ background-color: rgb(226, 196, 255);
+ }
+.accordion-button{
+font-size: 14px;
+font-weight: bold;
+text-transform: capitalize;
+background-color: rgb(226, 196, 255);
+padding: 12px;
+padding-left: 100PX;
+  padding-right: 100PX;
+}
+.accordion-button:hover{
+  color: rgb(61, 1, 61);
+}
+.accordion-body{
+  background-color: rgb(225, 193, 255);
+margin-left: 100PX;
+  padding: 1px;
+
+}
+.accordion-item{
+  background-color: rgb(225, 193, 255);
+}
+#accordionFlushExample{
+ color: bisque;
+
+}
+/* breadcrumbs */
+.breadcrumb a{
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 10px;
+ font-weight: 600;
+ text-decoration: none;
+
+}
+.breadcrumb li{
+  font-size: 14px;
+  color: lightgrey;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-top: 10px;
+padding-right: 10px;
+font-weight: bold;
+margin-top: 10px;
+}
+.pr img{
+    height: 239px;
+ 
+    position: absolute;
+    top:43%;
+    left:7%
+}
+@media screen and (min-width:992px){
+  .contact {
+   width:100%
+  }
+.navbar-toggler{
+  width: 90px;
+}
+
+}
+@media screen and (max-width:600px){
+.navbar-toggler{
+  width: 90px;
+}
+
+  .contact {
+   width:100%
+  }
+.contact h1{
+  font-size: 50px;
+  margin-right: 90px;
+  text-align: center;
+
+}
+.pr img{
+  display: none;
+}
+
+}
+@media screen and (min-width:600){
+  
+}
+.navbar-toggler{
+  background-color: white !important;
+  color: white !important;
+}
+
+
+.icons a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+
+
+}
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+
+
+
+}
+.icons ion-icon:hover{
+
+    color: rgb(176, 33, 100);
+}
+/* 
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+} */
+
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 5px 5px;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  white-space: nowrap;
+  
+ 
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 600
+}
+ul li a:hover {
+  color: hsl(313, 100%, 95%);
+  transition: 0.6s ease-out;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+  text-decoration: overline;
+ 
+}
+input,
+button {
+  font-size: 12px;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ font-weight: 600;
+}
+button {
+  background-color: #e68bc0;
+  color: #ffffff;
+}
+button:hover{
+  background-color: #2e002a;
+  transition: 0.6s ease-out;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #790c70;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+    
+      </style>
+</head>
+<body>
+  <div class="container-fluid"><div class="row"><div class="col"></div>
+  <form class="d-flex" >
+      <input class="form-control me-2" type="search" placeholder="what are you looking for?" aria-label="Search" style="height: 40px; margin-top: 10px;">
+     <div class="row"><div class="col-sm-12" >
+      <button class="bt" style=" color:white; margin-top: 6px;
+     font-weight: 650;padding: 9px ;padding-right: 19px;padding-left: 19px;">Search</button>
+     </div></div>
+     
+    </form>
+  </div>
+
+  <div class="div1">
+      <div class="search">
+        <img src="logo1.png">
+      </div>
+
+ 
+   <div class="row">
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" style="color: white;">DUS</a>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+            <span class="navbar-toggler-icon" style="color: white;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compare.html" style="color: white;">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sale.html" style="color: white;">SALE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  CATEGORIES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Art.html">Art supplies</a></li>
+                  <li><a class="dropdown-item" href="office.html">Office supplies</a></li>
+                  <li><a class="dropdown-item" href="scholhome.html">School supplies</a></li>
+                  <li><a class="dropdown-item" href="toys.html">Toys and games</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+     </div>
+   </div>
+  
+  <div class="row"><div class="col">
+    
+    <!-- breadcrumb -->
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="Contact Us (1).html">FAQS</a></li>
+  
+  </ol>
+</nav>
+<!-- breadcrumb -->
+  </div></div>
+
+
+    
+    
+    
+    
+    
+    <div class="div2">
+    <div class="contact">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="pr">
+        <img src="img-contact-us (2).png" alt="">
+    </div>
+    <div class="container">
+        <form>
+          
+
+          <div> <input type="text" id="first" placeholder="Name" required>    <input type="email" id="mail" placeholder="Email" required> </div>
+           <div> <input type="num" id="mob" placeholder="Mobile" required>    <input type="password" id="pwd" placeholder="password" required></div>
+            <input type="password" id="rpwd" placeholder="re-password" required>
+             <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <button type="submit" onclick="hello()" id="button">SUBMIT</button> <br><br>
+
+        </form>
+    </div>
+    
+    <script>
+        
+        function hello()
+        {
+            let mail=document.getElementById("mail").value;
+            let pwd=document.getElementById("pwd").value;
+            let rpwd=document.getElementById("rpwd").value;
+            let first=document.getElementById("first").value;
+            let mob=document.getElementById("mob").value;
+            
+
+            if(pwd==rpwd && mail!=="" && pwd!=="" &&rpwd!=="" &&first!=="" &&mob!==""  )
+            {
+                alert("Thank you");
+            }
+            else{
+                alert("Error! Please provide a valid information .");
+            }
+        }
+    </script>
+
+   </div><br>
+
+   
+ 
+<footer>
+  <div class="row primary">
+    <div class="column about">
+  
+    <h3>COMPANY</h3>
+  
+     <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 13px;
+     font-weight: 600;">
+        DUS-Dream-WeaverUniversal Stationery
+    </p>
+  
+    <div class="social">
+      <i class="fa-brands fa-facebook-square"></i>
+      <i class="fa-brands fa-instagram-square"></i>
+      <i class="fa-brands fa-twitter-square"></i>
+      <i class="fa-brands fa-youtube-square"></i>
+      <i class="fa-brands fa-whatsapp-square"></i>
+    </div>
+  </div>
+  
+  <div class="column links">
+  <h3>INFORMATION</h3>
+  
+   <ul>
+  
+    <li>
+     <a href="#faq">F.A.Q</a>
+    </li>
+    <li>
+     <a href="#cookies-policy">Our journey</a>
+    </li>
+    <li>
+     <a href="aboutus.html">About us</a>
+    </li>
+    <li>
+     <a href="Contact Us (1).html">Contact us</a>
+    </li>
+   </ul>
+  
+  </div>
+  
+  
+  <div class="column links">
+    <h3>STAY CONNECTED</h3>
+     <ul>
+      <li>
+        <div class="icons" >
+  
+          <a href="https://www.facebook.com/mohammadtaha.siddiqui.35" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a>
+          
+        
+          <a href="https://www.instagram.com/accounts/edit/" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
+          
+          <a href="https://www.skype.com/" target="_blank"><ion-icon name="logo-skype" ></ion-icon></a>
+           
+          <a href="https://twitter.com/login" target="_blank"><ion-icon name="logo-twitter" ></ion-icon></a>
+            
+          <a href="https://www.google.com.pk/webhp" target="_blank"><ion-icon name="logo-google" ></ion-icon></a>
+          
+          
+  
+         </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="column subscribe">
+   <h3>Sign up for our Newsletter</h3>
+    <div>
+     <input type="email" placeholder="Your email id here" />
+     <button>Subscribe</button>
+    </div>
+  
+  </div>
+      
+  <p style="text-align:left ;padding-top:20%;font-size: 10px;margin-left: 10%">
+    Address: 42 Chamberlain Road, Anarkali Bazar, Lahore, Punjab, Pakistan 54000<br><br>
+    Email: thestationerycompanypk@gmail.com<br><br>
+    Phone: 03-111-622-622<br><br>
+    Opening Hours: Monday to Saturday: 10am - 7pm
+        </p>
+  
+     
+</div>
+<div class="text-center p-3" style="font-size: smaller;border-top:#25262e 10px solid;background-color: #121315;padding:10px ;;">
+  © 2022 Dream Weaver Universal Stationary
+  <a class="text-grey" href="https://Universal.com/" style="text-decoration: none;color:#790c70;font-weight:600;   transition: 0.3s ease;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Universal Stationary.com</a>
+  </div>
+</div>
+</footer>
+  
+  </div>
+
+  </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

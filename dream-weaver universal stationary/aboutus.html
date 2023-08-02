@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="footer(2).css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar-toggler{
+        background-color: white !important;
+        color: white !important;
+      }
+.icons a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+
+
+}
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+
+
+
+}
+.icons ion-icon:hover{
+
+    color: rgb(88, 0, 49);
+}
+body {
+  padding: 0;
+  margin: 0;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: flex-end;
+}
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+  margin-top:100% ;
+  padding-top: 10%;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-top: 10%;
+  margin-left: 14%;
+  
+ 
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 600
+}
+ul li a:hover {
+  color: hsl(313, 100%, 95%);
+  transition: 0.6s ease-out;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+  text-decoration: overline;
+ 
+}
+input,
+button {
+  font-size: 12px;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ font-weight: 600;
+}
+button {
+  background-color: #e68bc0;
+  color: #ffffff;
+}
+button:hover{
+  background-color: #2e002a;
+  transition: 0.6s ease-out;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #790c70;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #cb41d0;
+background-image: linear-gradient(43deg, #581f4c 0%, rgb(255, 221, 233) 46%, #694a75 100%);
+
+    align-content: center;
+    min-height: 100vh;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 75vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+   
+}
+.image{
+    background-color: #20011f;
+    display: flex;
+    border-radius: 12px 0 0 12px;
+  
+}
+.image img{
+height:50vh;
+margin:50px auto
+}
+.ima img{
+    height:50vh;
+margin:50px auto
+}
+.content{
+    padding-top: 20px;
+    background-color: #3f0b2e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0  12px 12px 0;
+    color: #fff;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    opacity: 0.9;
+    font-family:
+    Lucida Handwriting;
+    font-weight: bolder;
+   -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+  color: #fff;
+letter-spacing: 2px;
+	text-transform:capitalize;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color:#ffffff
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    /* border: 2px solid #d041c4; */
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.links li a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #ffffff;
+    transition: 0.6s ease-out;
+}
+
+.vertical-line{
+    height: 30px;
+    width: 3px;
+    background: #C850C0;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: #C850C0;
+    cursor: pointer;
+}
+
+
+/*****************/
+
+@media(max-width: 900px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+    .image{
+        height: 100vh;
+        border-radius: none;
+    }
+   .ima{
+    height: 100vh;
+        border-radius: none;
+   }
+    .content{
+        height: 100vh;
+        border-radius: none;
+    
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+  
+    
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+        
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+.credit{
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .credit a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+  } 
+  .para p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+  font-weight: 500;
+ 
+
+  }
+  .para2 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+  font-weight: 500;
+  }
+  .para2 h2{
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+ 
+  }
+
+ 
+        </style>
+    </head>
+    <body>
+  
+      
+        <section>
+       
+            <div class = "image">
+              <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png">
+           </div>
+
+           <div class = "content">
+               <h2>About Us</h2>
+               <span><!-- line here --></span>
+               <p>“Whatever you choose for your stationery is your favorite color because it’s where you pour your heart out.”</p>
+               <ul class = "links">
+                   <li><a href = "home.html">Home</a></li>
+                   <div class = "vertical-line"></div>
+                   <li><a href = "FAQS.html">Faqs</a></li>
+                   <div class = "vertical-line"></div>
+                   <li><a href = "Contact Us (1).html">Contact</a></li>
+               </ul> </div>
+          </div></div>
+            
+                
+
+                </section>
+<br><br>
+                <section>
+                    <div class = "para">
+                      <div class="row"><div class="col"><p>DUS provides Quality Designer Stationery at very affordable prices in Pakistan Online at your door step. We have complete range of Fancy Funky to Conventional Daily to us stationery including staplers, calculators, organizers, school bags, pencil cases, school bottles, lunch boxes, DIY and crafting projects covering everything in art materials, office supplies, School Supplies, Craft Supplies.</p></div>
+                      <div class="col"><P>We feel pride in our quality checks and measures, Only the best quality products are displayed on our website with all Original pictures on the products and the same</P></div>
+                      <div class="col"><P>quality products as shown on our website and social media pages gets delivered to our customers. We have over 220,000 Followers and Highest Number of 3rd party Verified Reviews from our customers with 4.9 STAR RATING Overall.</P></div>
+                      <div class="col"></div><P>Also we have ready made gift sets for almost all ages including gifts sets for kids girls, gifts sets of kids boys, gift sets for boys, gift sets for boys, gift sets for adults, gift sets for teenagers, gift sets for pre teens and many many more.</P></div>
+                    </div>
+        
+                    <div class = "content">
+                      
+                        <span><!-- line here --></span>
+                      
+                        <ul class = "links">
+                           <div class="row"><div class="col"><P>The main scope of our business is to sell quality stationery and office equipment. In addition to the above, we can also procure products locally and supply them to you at very competitive prices. Karachi’s position as a major wholesale market and distribution hub to other cities of Pakistan, allows us to source products at very competitive prices and pass on the savings to our customers</P></div>
+                          
+                           <div class="col"></div>
+                           <div class="col"></div></div>
+                        </ul> </div>
+                        
+     
+                      
+             
+                            
+                        </section>
+                        <br><br>
+
+                        <section>
+                            <div class="para2"><div class="row"><h2>Quality Assurance</h2><div class="col"><p>You can benefit from brand names you trust, backed by performance, high quality service and strong distribution, all originating from one source. Most of the products we import meet international quality standards</p></div>
+                            <div class="col"><h2>Customer Service</h2><p>Our aim is to increase our product range on a regular basis. We can update you by e-mail (or regular air-mail) whenever new products arrive. Our trained, experienced staff and modern inventory management system ensure that our products and services meet the customer’s highest expectations. Our staff is always reminded that our customers are the most important part of the business. With this in mind, our sales team will be more than happy to give any assistance you may require. Our quality products, coupled with excellent service, high fill rates, quick shipping, and competitive pricing make us your profitable choice.</p></div>
+                            <div class="col"><h2>Our Goal</h2><p>Supply products that offer the best value in price and quality.
+                                <br>Establish long-term relationships with custome</p></div>
+                            <div class="col"></div><h2>Our Strategy</h2><p>Business is an on going process and customer satisfaction is the pre-requisite to any successful business.
+                                We firmly believe in the policy – “one satisfied client creates ten new clients</p></div></div>
+                            
+                                <div class="row"><div class="col">
+     
+                            <div class = "content">
+                                <span><!-- line here --></span>
+                                
+                               
+                                <div class = "ima">
+                                  <div class="row"><div class="col">  <img src="abt.png" style="margin-left:7% ;"></div>
+                                  <div class="col"> <img src="images (2).png" style="margin-left:4.5% ; height: 300px;"></div>
+                                  <div class="col ">   <img src="img2 (2).png" style="margin-left:14%;"></div></div>
+                                  
+                                 
+                                 
+                                    </div>
+                                    </div>
+                                 </div>
+                                </section>
+
+                             <footer>
+        <div class="row primary">
+          <div class="column about">
+        
+          <h3>COMPANY</h3>
+        
+           <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: 13px;
+           font-weight: 600;">
+              DUS-Dream-WeaverUniversal Stationery
+          </p>
+        
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-youtube-square"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </div>
+        </div>
+        
+        <div class="column links";>
+        <h3>INFORMATION</h3>
+        
+         <ul>
+        
+          <li>
+           <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+           <a href="#cookies-policy">Our journey</a>
+          </li>
+          <li>
+           <a href="aboutus.html">About us</a>
+          </li>
+          <li>
+           <a href="Contact Us (1).html">Contact us</a>
+          </li>
+         </ul>
+        
+        </div>
+        
+        
+        <div class="column links">
+          <h3>STAY CONNECTED</h3>
+           <ul>
+            <li>
+              <div class="icons" >
+        
+                <a href="https://www.facebook.com/mohammadtaha.siddiqui.35" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a>
+                
+              
+                <a href="https://www.instagram.com/accounts/edit/" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
+                
+                <a href="https://www.skype.com/" target="_blank"><ion-icon name="logo-skype" ></ion-icon></a>
+                 
+                <a href="https://twitter.com/login" target="_blank"><ion-icon name="logo-twitter" ></ion-icon></a>
+                  
+                <a href="https://www.google.com.pk/webhp" target="_blank"><ion-icon name="logo-google" ></ion-icon></a>
+                
+                
+        
+               </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="column subscribe">
+         <h3 style="margin-bottom: 13px;margin-right: 20px;">Sign up for our Newsletter</h3>
+          <div>
+           <input type="email" placeholder="Your email id here" />
+           <button>Subscribe</button>
+          </div>
+        
+        </div>
+        
+        </div>
+        <div class="under">
+        <div class="row copyright">
+          <div class="footer-menu">
+        
+            <p style="text-align:left ;padding-top:20%;font-size: 10px;margin-left: 10%;">
+              Address: 42 Chamberlain Road, Anarkali Bazar, Lahore, Punjab, Pakistan 54000<br><br>
+              Email: thestationerycompanypk@gmail.com<br><br>
+              Phone: 03-111-622-622<br><br>
+              Opening Hours: Monday to Saturday: 10am - 7pm
+                  </p>
+            
+               
+          </div>
+          <div class="text-center p-3" style="font-size: smaller;color: rgb(174, 175, 177);background-color: #121315;border-radius:10px;padding:10px ;;">
+            © 2022 Dream Weaver Universal Stationary
+            <a class="text-grey" href="https://Universal.com/" style="text-decoration: none;color:#790c70;font-weight:600;   transition: 0.3s ease;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Universal Stationary.com</a>
+            </div>
+        </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                           
+
+
+</body>
+  </html>
